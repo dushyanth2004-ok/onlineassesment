@@ -1,0 +1,108 @@
+.urllist {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.urllist h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.urllist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.urllist li {
+  background: #f1f6fb;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border-left: 5px solid #3498db;
+  transition: 0.3s ease;
+  word-wrap: break-word;
+}
+
+.urllist li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(52, 152, 219, 0.2);
+}
+
+.urllist strong {
+  display: block;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.urllist a {
+  color: #2980b9;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.urllist a:hover {
+  text-decoration: underline;
+}
+
+.urllist button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.urllist button:hover {
+  background-color: #2980b9;
+}
+
+
+@media screen and (max-width: 768px) {
+  .urllist {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .urllist h2 {
+    font-size: 22px;
+  }
+
+  .urllist li {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .urllist button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .urllist li {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .urllist strong {
+    font-size: 14px;
+  }
+
+  .urllist a {
+    font-size: 13px;
+  }
+}

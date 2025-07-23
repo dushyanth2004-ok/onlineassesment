@@ -2,9 +2,8 @@ import { useState } from 'react'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// import './App.css'
 import Urlshortner from './Components/Urlshortnerpage/Urlshortner'
-
+import Urlshort from './Components/UrlshortList/Urlshort';
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route path="/" element={ <Urlshortner/>} />
-
+        <Route path="/urls" element={<Urlshort />} />
       </Routes>
     </BrowserRouter>
     

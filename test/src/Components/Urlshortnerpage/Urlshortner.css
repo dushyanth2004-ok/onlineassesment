@@ -1,52 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.urlshort{
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-    margin-top: 30px;
-    width: 25rem;
-    height: 30rem;
-    border-radius: 20px;
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7fa;
+  min-height: 100vh;
+  padding: 20px;
 }
-.urlshort h1{
-    text-align: center;
-    margin-bottom: 20px;
+
+.urlshort {
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  padding: 30px;
+  margin-top: 40px;
+  transition: all 0.3s ease-in-out;
 }
-.urlshort label{
-    padding-left: 20px;
+
+.urlshort h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c3e50;
 }
-.urlshort input{
-    width: 20rem;
+
+.urlshort label {
+  font-weight: 600;
+  margin-left: 5px;
+  color: #34495e;
+}
+
+.urlshort input {
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+.urlshort input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.2);
+}
+
+.urlshort .short {
+  width: 100%;
+  height: 45px;
+  padding: 10px 15px;
+  font-size: 15px;
+  background: #f1f6fb;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+}
+
+.urlshort button {
+  width: 100%;
+  height: 45px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.urlshort button:hover {
+  background-color: #2980b9;
+}
+
+@media screen and (max-width: 480px) {
+  .urlshort {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .urlshort input,
+  .urlshort .short,
+  .urlshort button {
     height: 40px;
-    margin-left: 20px;
-}
-.urlshort .short{
-    width: 20rem;
-    height: 40px;
-    margin-left: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.597);
-}
-.urlshort button{
-    width: 20rem;
-    height: 40px;
-    margin-left: 20px;
-    margin-top: 20px;
-    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .urlshort h1 {
+    font-size: 24px;
+  }
 }
